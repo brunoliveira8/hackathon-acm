@@ -77,8 +77,7 @@ function initialize() {
 	      '<tr align="left"><td><b>DESTINATION:</b></td><td>  <b>Southwest 300th Road, KS</b></td></tr>'+
 	      '<tr align="left" ><td><b>DISTANCE:</b></td>  <td><b>50 miles</b></td></tr>'+
 	      '</tbody></table><br>'+
-	      '<button style="background-color: #101010" class="btn btn-primary"><span class="glyphicon glyphicon-usd"></span>  GET IT</button>'+
-	      '</div>'+
+    '<a href="my_freights.html" <button style="background-color: #101010" class="btn btn-primary"><span class="glyphicon glyphicon-usd"></span>  GET IT</button></a>'+	      '</div>'+
 	      '</div>';
 
 	      var contentString1 = '<div class="info-window">'+
@@ -92,7 +91,7 @@ function initialize() {
 	      '<tr align="left"><td><b>DESTINATION:</b></td><td>  <b>Southwest 300th Road, KS</b></td></tr>'+
 	      '<tr align="left" ><td><b>DISTANCE:</b></td>  <td><b>50 miles</b></td></tr>'+
 	      '</tbody></table><br>'+
-	      '<button style="background-color: #101010" class="btn btn-primary"><span class="glyphicon glyphicon-usd"></span>  GET IT</button>'+
+	      '<a href="my_freights.html" <button style="background-color: #101010" class="btn btn-primary"><span class="glyphicon glyphicon-usd"></span>  GET IT</button></a>'+
 	      '</div>'+
 	      '</div>';
 
