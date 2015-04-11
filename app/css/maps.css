@@ -39,3 +39,8 @@
         font-size: 13px;
         font-weight: 300;
       }
+
+
+      #info-window {
+        background-color: "yellow"
+      }

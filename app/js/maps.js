@@ -66,16 +66,18 @@ function initialize() {
       	icon: image
  	 	});
 
- 	 	 var contentString = '<div id="content">'+
+ 	 	 var contentString = '<div class="info-window">'+
 	      '<div id="siteNotice">'+
 	      '</div>'+
 	      '<h1 id="firstHeading" class="firstHeading">Freight</h1>'+
 	      '<div id="bodyContent">'+
-	      '<p><b>PRICE:</b>  <b>$99.00</b>'+
-	      '<p><b>SOURCE ADRESS:</b>  <b>1, University of Arkansas</b>'+
-	      '<p><b>DESTINATION ADRESS:</b>  <b>Southwest 300th Road, KS</b>'+
-	      '<p><b>DISTANCE:</b>  <b>50 miles</b></br>'+
-	      '<button class="btn btn-primary">GET IT</button>'+
+	      '<table class="table-striped"><tbody>'+
+	      '<tr align="left"><td ><b>PRICE:</b></td> <td><b>$99.00</b></td></tr>'+
+	      '<tr align="left" ><td><b>SOURCE:</b> </td> <td><b>1, University of Arkansas</b></td></tr>'+
+	      '<tr align="left"><td><b>DESTINATION:</b></td><td>  <b>Southwest 300th Road, KS</b></td></tr>'+
+	      '<tr align="left" ><td><b>DISTANCE:</b></td>  <td><b>50 miles</b></td></tr>'+
+	      '</tbody></table><br>'+
+	      '<button class="btn btn-primary"><span class="glyphicon glyphicon-usd"></span>  GET IT</button>'+
 	      '</div>'+
 	      '</div>';
 
