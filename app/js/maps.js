@@ -4,6 +4,7 @@ var directionsService = new google.maps.DirectionsService();
  function initialize() {
  		
  		directionsDisplay = new google.maps.DirectionsRenderer();
+ 		var markers = [];
 
  		var myLatlng = new google.maps.LatLng(36.067386,-94.156918);
         var mapOptions = {
@@ -15,6 +16,11 @@ var directionsService = new google.maps.DirectionsService();
             mapOptions);
         directionsDisplay.setMap(map);
         var image = 'img/packet-icon1.png';
+
+          // Create the search box and link it to the UI element.
+		  var input = /** @type {HTMLInputElement} */(
+		      document.getElementById('pac-input'));
+		  map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
 
         var marker1 = new google.maps.Marker({
       	position: myLatlng,
