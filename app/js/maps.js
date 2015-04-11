@@ -69,22 +69,44 @@ function initialize() {
  	 	 var contentString = '<div class="info-window">'+
 	      '<div id="siteNotice">'+
 	      '</div>'+
-	      '<h1 id="firstHeading" class="firstHeading">Freight</h1>'+
+	      '<h2 id="firstHeading" class="firstHeading">Freight 1</h2>'+
 	      '<div id="bodyContent">'+
-	      '<table class="table-striped"><tbody>'+
+	      '<table style="font-size: 12px" class="table"><tbody>'+
 	      '<tr align="left"><td ><b>PRICE:</b></td> <td><b>$99.00</b></td></tr>'+
 	      '<tr align="left" ><td><b>SOURCE:</b> </td> <td><b>1, University of Arkansas</b></td></tr>'+
 	      '<tr align="left"><td><b>DESTINATION:</b></td><td>  <b>Southwest 300th Road, KS</b></td></tr>'+
 	      '<tr align="left" ><td><b>DISTANCE:</b></td>  <td><b>50 miles</b></td></tr>'+
 	      '</tbody></table><br>'+
-	      '<button class="btn btn-primary"><span class="glyphicon glyphicon-usd"></span>  GET IT</button>'+
+	      '<button style="background-color: #101010" class="btn btn-primary"><span class="glyphicon glyphicon-usd"></span>  GET IT</button>'+
 	      '</div>'+
 	      '</div>';
 
-	  var infowindow = new google.maps.InfoWindow({
-	      content: contentString,
-	      maxWidth: 400
+	      var contentString1 = '<div class="info-window">'+
+	      '<div id="siteNotice">'+
+	      '</div>'+
+	      '<h2 id="firstHeading" class="firstHeading">Freight 2</h2>'+
+	      '<div id="bodyContent">'+
+	      '<table style="font-size: 12px" class="table"><tbody>'+
+	      '<tr align="left"><td ><b>PRICE:</b></td> <td><b>$120.00</b></td></tr>'+
+	      '<tr align="left" ><td><b>SOURCE:</b> </td> <td><b>1, University of Arkansas</b></td></tr>'+
+	      '<tr align="left"><td><b>DESTINATION:</b></td><td>  <b>Southwest 300th Road, KS</b></td></tr>'+
+	      '<tr align="left" ><td><b>DISTANCE:</b></td>  <td><b>50 miles</b></td></tr>'+
+	      '</tbody></table><br>'+
+	      '<button style="background-color: #101010" class="btn btn-primary"><span class="glyphicon glyphicon-usd"></span>  GET IT</button>'+
+	      '</div>'+
+	      '</div>';
+
+	  var infowindow = new InfoBubble({
+	      maxWidth: 800,
+	      backgroundColor: '#ffe513',
+          borderRadius: 10,
+          borderWidth: 5,
+          borderColor: '#0000',
 	  });
+
+	  
+      infowindow.addTab('Freight 1', contentString);
+      infowindow.addTab('Freight 2', contentString1);
 
 	  google.maps.event.addListener(marker1, 'click', function() {
     	calcRoute();
